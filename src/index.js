@@ -1,13 +1,32 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { createStore } from 'redux';
+import { Provider } from 'react-redux';
+import { persistStore, persistReducer } from 'redux-persist';
+import { PersistGate } from 'redux-persist/integration/react'
+import storage from 'redux-persist/lib/storage';
 import './index.css';
 import App from './App';
+import reducer from './store/reducer';
 import * as serviceWorker from './serviceWorker';
 
+const persistConfig = {
+  key: 'tasks',
+  storage: storage,
+  whitelist: ['toDo', 'inProgress', 'inReview', 'done', 'groupList'] // which reducer want to store
+};
+const pReducer = persistReducer(persistConfig, reducer);
+const store = createStore(pReducer);
+const persistor = persistStore(store);
+
+// const store = createStore(reducer);
+
 ReactDOM.render(
-  <React.StrictMode>
+  <Provider store={store}>
+  <PersistGate loading={null} persistor={persistor}>
     <App />
-  </React.StrictMode>,
+    </PersistGate>
+  </Provider>,
   document.getElementById('root')
 );
 

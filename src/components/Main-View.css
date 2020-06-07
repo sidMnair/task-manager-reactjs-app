@@ -1,0 +1,164 @@
+.mainView .side-nav{
+    display: inline-block;
+    position: relative;
+    width: 4%;
+    height: 100vh;
+    box-shadow:2px 1px 7px rgba(128,128,128,0.44);
+    background-color: #0068ff;
+}
+
+.top-icon{
+    display: block;
+    position: relative;
+    top: 7px;
+    font-size: 30px;
+    left: 14px;
+    color: #ffffff;
+}
+
+.icons-group{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 85px;
+}
+
+.icon-wrapper{
+    margin: 5px 0;
+    padding: 5px;
+    background-color: transparent;
+    color:#a7a9ab;
+    cursor:pointer;
+    font-size:25px;
+    /* border-radius: 5px; */
+}
+
+.back-arrow-icon{
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.project-title-icon{
+    display: inline-block;
+    font-size:14px;
+}
+
+.user-spec-icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-icon{
+    display: inline-block;
+    margin-right: 16px;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    padding: 4px 5px 7px 5px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.12);
+}
+
+.notification-icon{
+    display: inline-block;
+    margin-right: 16px;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.12);
+}
+
+.user-icon{
+    display: inline-block;
+    margin-right: 16px;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    border-radius: 50%;
+    box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.12);
+}
+
+.back-arrow-icon .back-button{
+    font-size: 15px;
+    margin-left: 10px;
+}
+
+.icon-wrapper-active{
+    cursor:pointer;
+    background-color: #0655c7;
+    border-radius: 5px;
+    padding: 8px;
+    color:#ffffff;
+}
+
+.mainView .container{
+    display: inline-block;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    /* margin-left: 60px; */
+    box-sizing:border-box;
+    /* overflow-y: scroll; */
+}
+
+.mainView .container .header-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    width: 96%;
+    height: 60px;
+    box-shadow: 1px 2px 7px rgba(128,128,128,0.44);
+    box-sizing: border-box;
+
+}
+
+.mainView .container .task-view{
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    align-content: center;
+    padding: 20px;
+    width: 96%;
+    height: 565px;
+    overflow-y: auto;
+    overflow-x: auto;
+    /* margin-top: 60px; */
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.mainView .container .floating-add-button{
+    position: fixed;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    background-color: #0068ff;
+    color: #ffffff;
+    content: "+";
+    font-size: 15px;
+    font-weight: 400;
+    top: 540px;
+    right: 41px;
+    box-shadow:0 0 6px 3px #e9e9e9;
+    cursor:pointer;
+    
+}
+
+.mainView .container .floating-add-button:hover{
+    transform:scale(1.2);
+}
+
+.mainView .container .floating-add-button .add-button-icon{
+    top: -9px;
+    left: 13px;
+    font-size: 50px;
+    position: relative;
+    color: #ffffff;
+}
