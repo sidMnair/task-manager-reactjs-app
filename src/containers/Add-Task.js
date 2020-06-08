@@ -92,7 +92,7 @@ const AddTask = (props) => {
 
         props.onAddTasks(newTask);
 
-        props.closeModal();
+        onCloseModal();
     };
 
     const onCloseModal = (event) => {
