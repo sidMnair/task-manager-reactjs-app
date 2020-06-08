@@ -1,8 +1,8 @@
 // import React from 'react';
-import SampleImage1 from './assets/sample-image-1.jpg';
-import SampleImage2 from './assets/sample-image-2.jpg';
-import SampleImage3 from './assets/sample-image-3.jpg';
-import UserImage from './assets/user-icon.jpg';
+import SampleImage1 from '../assets/sample-image-1.jpg';
+import SampleImage2 from '../assets/sample-image-2.jpg';
+import SampleImage3 from '../assets/sample-image-3.jpg';
+import UserImage from '../assets/user-icon.jpg';
 
 // const TaskManagerContext = React.createContext();
 
@@ -19,21 +19,19 @@ const initialData = () => {
                     currentStatus: 'toDo',
                     taskDescription: 'This is a sample task',
                     taskUserId: 'Sid',
-                    status:'high',
+                    status: 'High',
                     image: SampleImage1,
-                    createdOn: "",
-                    users:[
-                        {   userId: 'user-0',
-                            userName:'Sid',
+                    endDate: "2020-06-20",
+                    users: [
+                        {
+                            userId: 'user-0',
+                            userName: 'Sid',
                             userImage: UserImage
                         },
-                        {   userId: 'user-1',
-                            userName:'Jake',
-                            userImage: UserImage
-                        },
-                        {   userId: 'user-2',
-                            userName:'Emma',
-                            userImage: UserImage
+                        {
+                            userId: 'user-1',
+                            userName: 'Mahesh',
+                            userImage: "./broken-image.jpg"
                         }
                     ]
                 },
@@ -43,9 +41,14 @@ const initialData = () => {
                     currentStatus: 'toDo',
                     taskDescription: 'This is another sample task',
                     taskUserId: 'Sid',
-                    status:'medium',
+                    status: 'High',
                     image: SampleImage2,
-                    createdOn: ""
+                    endDate: "2020-06-15",
+                    users: [{
+                        userId: 'user-0',
+                        userName: 'Mahesh',
+                        userImage: "./broken-image.jpg"
+                    }]
                 },
                 {
                     taskId: 'task-2',
@@ -53,28 +56,43 @@ const initialData = () => {
                     currentStatus: 'toDo',
                     taskDescription: 'This is a sample task',
                     taskUserId: 'Sid',
-                    status:'normal',
+                    status: 'Medium',
                     image: SampleImage3,
-                    createdOn: ""
-                },{
+                    endDate: "2020-08-10",
+                    users: [{
+                        userId: 'user-0',
+                        userName: 'Basil',
+                        userImage: "./broken-image.jpg"
+                    }]
+                }, {
                     taskId: 'task-3',
                     taskTitle: 'Third Todo',
                     currentStatus: 'toDo',
                     taskDescription: 'This is another sample task',
                     taskUserId: 'Sid',
-                    status:'high',
+                    status: 'High',
                     image: SampleImage1,
-                    createdOn: ""
+                    endDate: "2020-07-01",
+                    users: [{
+                        userId: 'user-0',
+                        userName: 'Sachin',
+                        userImage: "./broken-image.jpg"
+                    }]
 
-                },{
+                }, {
                     taskId: 'task-4',
                     taskTitle: 'Fourth Todo',
                     currentStatus: 'toDo',
                     taskDescription: 'This is a sample task',
                     taskUserId: 'Sid',
-                    status:'normal',
+                    status: 'Medium',
                     image: SampleImage1,
-                    createdOn: ""
+                    endDate: "2020-09-10",
+                    users: [{
+                        userId: 'user-0',
+                        userName: 'Sid',
+                        userImage: "./broken-image.jpg"
+                    }]
 
                 },
                 {
@@ -83,9 +101,14 @@ const initialData = () => {
                     taskTitle: 'Fifth Todo',
                     taskDescription: 'This is another sample task',
                     taskUserId: 'Sid',
-                    status:'medium',
+                    status: 'Low',
                     image: SampleImage1,
-                    createdOn: "",
+                    endDate: "2020-12-10",
+                    users: [{
+                        userId: 'user-0',
+                        userName: 'Mahesh',
+                        userImage: "./broken-image.jpg"
+                    }]
 
 
                 },]
@@ -107,7 +130,7 @@ const initialData = () => {
             }]
     }
 
-    return function (index){
+    return function (index) {
         // let group = name;
 
         return data.list[index];

@@ -34,6 +34,7 @@
   .board-tile .board-tile-content-container .board-tile-content {
       height: 100%;
       position: relative;
+      
       padding-bottom: 1px;
       /* border: solid 1px;
       border-color: rgba(200,200,200,1);
@@ -42,6 +43,9 @@
 
   }
    .id-title-container {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
       position: relative;
       margin: 4px 6px 6px 0px;
       overflow: hidden;
@@ -63,14 +67,18 @@
       padding-right: 5px;
 
   }
-  .badge {
+
+  .badge, .date-badge {
       margin-left: 6px;
-      padding-left: 10px;
+      padding: 5px;
       display: flex;
+      border-radius:25px;
+      border: 1px solid #bdbdbd;
+
   }
 
   .user-badge{
-    width: 50px;
+    width: auto;
     height: 50px;
     position: relative;
     display: flex;
@@ -80,4 +88,14 @@
 
   .user-badge img{
     position: absolute;
+  }
+  
+  .highLight{
+    background-color:green;
+    color: #efefef;
+  }
+
+  .light{
+    background-color:#ffffff;
+    color: black;
   }
