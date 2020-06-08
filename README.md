@@ -4,6 +4,8 @@ This is a simple Task Manager App made using Reactjs and few other plugins along
 
 ### `Kindly Note: The side navigation and top header are not functional.`
 
+Checkout the [Live Demo](https://task-manager-reactjs-app.firebaseapp.com/)
+
 ## Functionality:
 
 1. Drag Drop Feature : View Sample Task and Drag and Drop the tasks into different stages of task management.
