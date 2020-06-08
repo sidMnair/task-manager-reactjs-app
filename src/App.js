@@ -1,5 +1,5 @@
 import React from 'react';
-import MainView from './components/Main-View';
+import MainView from './components/Main-View/Main-View';
 import './App.css';
 
 function App() {
